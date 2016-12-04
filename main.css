@@ -7,7 +7,12 @@
   background-color: #F8F8F8 ;
   border: 1px solid black;
 }
-.wrapper .header .navbar {
+.wrapper .header .menu {
+  display: block;
   background-color: #F8F8F8 ;
+  border: 1px solid black;
+}
+.wrapper .header .menu .menu__item {
+  display: block;
   border: 1px solid black;
 }
