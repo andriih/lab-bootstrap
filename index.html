@@ -11,32 +11,30 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header container-fluid">
+		
+		<header class="header ">
 			<div class="row">
-
-				<div class="logo col-lg-3">
-					<a href="#">Construction companies portal</a>
-				</div>
-
 				<div class="menubar">
-						<div class="row">
-							<ul class="menu col-lg-8 ">
-								<li class="menu__item col-lg-1">
-									<a href="#" class="menu__link">Users</a>
-								</li>
-								<li class="menu__item col-lg-1">
-									<a href="#" class="menu__link ">Objects</a>
-								</li>
-								<li class="menu__item col-lg-1">
-									<a href="#" class="menu__link ">Articles</a>
-								</li>
-							</ul>
-						</div>
+						<nav class="navbar navbar-defaul navbar-fixed-top">
+						  <div class="container-fluid">
+						    <div class="navbar-header">
+						      <a class="navbar-brand" href="#">Construction companies portal</a>
+						    </div>
+						    <ul class="nav navbar-nav">
+						      <li class="active"><a href="#">Home</a></li>
+						      <li><a href="#">Users</a></li>
+						      <li><a href="#">Object</a></li>
+						      <li><a href="#">Articles</a></li>
+						    </ul>
+						  </div>
+						</nav>
 				</div>
 			</div>
 		</header>
 		<div class="content_wrapper">
+
 			<div class="row">
+
 				<header class="contentbar_header col-lg-4 ">
 					<label for="create_btn"><h1>Articles management table</h1></label>
 				</header>
@@ -94,8 +92,11 @@
 							<td>Finished</td>
 							<td>
 								<div class="btn-group">
-								    <button type="button" class="btn btn-primary">Edit</button>
-								    <button type="button" class="btn btn-danger">Remove</button>
+								    <div class="row">
+										<button type="button" class="btn btn-primary col-lg-6">Edit</button>
+								    	<button type="button" class="btn btn-danger col-lg-6">Remove</button>
+									</div>
+								    
 								    
 								  </div>
 							</td>
@@ -115,8 +116,7 @@
 							<td>Finished</td>
 							<td>
 								<div class="btn-group">
-								    <button type="button" class="btn btn-primary">Edit</button>
-								    <button type="button" class="btn btn-danger">Remove</button>
+									
 								    
 								  </div>
 							</td>
@@ -136,8 +136,11 @@
 							<td>Finished</td>
 							<td>
 								<div class="btn-group">
-								    <button type="button" class="btn btn-primary">Edit</button>
-								    <button type="button" class="btn btn-danger">Remove</button>
+								   <div class="row">
+										<button type="button" class="btn btn-primary col-lg-6">Edit</button>
+								    	<button type="button" class="btn btn-danger col-lg-6">Remove</button>
+									</div>
+								    
 								    
 								  </div>
 							</td>
@@ -154,7 +157,12 @@
   <ul class="pagination " >
     <li>
       <a href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
+        <i class="glyphicon glyphicon-fast-backward"></i>
+      </a>
+    </li>
+     <li>
+      <a href="#" aria-label="Previous">
+        <i class="glyphicon glyphicon-backward"></i>
       </a>
     </li>
     <li><a href="#">1</a></li>
@@ -164,7 +172,12 @@
     <li><a href="#">5</a></li>
     <li>
       <a href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
+        <i class="glyphicon glyphicon-fast-forward"></i>
+      </a>
+    </li>
+    <li>
+      <a href="#" aria-label="Next">
+        <i class="glyphicon glyphicon-forward"></i>
       </a>
     </li>
   </ul>
