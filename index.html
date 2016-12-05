@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Bootstrap. Into</title>
+	<title>Template
+	</title>
 	<script src="node_modules/bootstrap/dist/js/bootstrap"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
@@ -10,7 +11,7 @@
 	
 </head>
 <body>
-	<div class="wrapper">
+	<div class="wrapper ">
 		
 		<header class="header ">
 			<div class="row">
@@ -31,10 +32,11 @@
 				</div>
 			</div>
 		</header>
-		<div class="content_wrapper">
-
+		<div class="content_wrapper col-lg-10 col-lg-offset-1">
 			<div class="row">
-
+				<div class="col-lg-1"></div>
+			</div>
+			<div class="row">
 				<header class="contentbar_header col-lg-4 ">
 					<label for="create_btn"><h1>Articles management table</h1></label>
 				</header>
@@ -70,11 +72,11 @@
 						<tr>
 							<th>Logo</th>
 							<th>Title</th>
-							<th>Short description</th>
+							<th class="text-center">Short description</th>
 							<th>Creat date</th>
 							<th>Category</th>
 							<th>Type</th>
-							<th>options</th>
+							<th class="text-center">options</th>
 						</tr>
 					</thead>
 						<tr>
@@ -108,7 +110,7 @@
 							<td>
 								About aurelia
 							</td>
-							<td class="data-table__desc">
+							<td class="text-center">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam blanditiis, commodi consequuntur dignissimos dolor eveniet ex excepturi laboriosam nihil non, odio officia, quod quos similique temporibus tenetur velit! 
 							</td>
 							<td>25/08/2016</td>
@@ -116,8 +118,10 @@
 							<td>Finished</td>
 							<td>
 								<div class="btn-group">
-									
-								    
+									<div class="row">
+										<button type="button" class="btn btn-primary col-lg-6">Edit</button>
+								    	<button type="button" class="btn btn-danger col-lg-6">Remove</button>
+									</div>
 								  </div>
 							</td>
 						</tr>
@@ -128,7 +132,7 @@
 							<td>
 								About aurelia
 							</td>
-							<td class="data-table__desc">
+							<td class="text-center">
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquam aperiam blanditiis, commodi consequuntur dignissimos dolor eveniet ex excepturi laboriosam nihil non, odio officia, quod quos similique temporibus tenetur velit! 
 							</td>
 							<td>25/08/2016</td>
@@ -150,8 +154,12 @@
 					</tbody>				
 				</table>
 			</main>
+			<!-- offset -->
+			<!-- <div class="row">
+				<div class="col-lg-1"></div>
+			</div> -->
+		
 		</div>
-	</div>
 <footer class="footer">
 	<nav aria-label="Page navigation" class="text-center">
   <ul class="pagination " >
