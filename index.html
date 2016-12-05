@@ -3,12 +3,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Bootstrap. Into</title>
+	<script src="node_modules/bootstrap/dist/js/bootstrap"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 	<link rel="stylesheet" href="main.css">
+	
 </head>
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header class="header container-fluid">
 			<div class="row">
 
 				<div class="logo col-lg-3">
@@ -16,7 +19,7 @@
 				</div>
 
 				<div class="menubar">
-						<!--<div class="row">-->
+						<div class="row">
 							<ul class="menu col-lg-8 ">
 								<li class="menu__item col-lg-1">
 									<a href="#" class="menu__link">Users</a>
@@ -28,27 +31,36 @@
 									<a href="#" class="menu__link ">Articles</a>
 								</li>
 							</ul>
-						<!--</div>-->
+						</div>
 				</div>
 			</div>
 		</header>
 		<div class="content_wrapper">
 			<div class="row">
-				<header class="contentbar_header col-lg-6">
-					<h1>Articles management table</h1>
+				<header class="contentbar_header col-lg-4 ">
+					<label for="create_btn"><h1>Articles management table</h1></label>
 				</header>
 
-				<div class="create_btn col-lg-6">
-					<button class="" >Create</button>
+				<div class="btn-group col-lg-8" role="group" aria-label="...">
+  					<button type="button" class="btn btn-success">Create</button>
 				</div>
+
 			</div>
 			<section class="filters_bar">
 					<div class="row">
-						<div class="type_filter ">
-							<label >Filter by type</label>
+						<form class="form-inline col-lg-2">
+							<label for="menu1" class="control-label">Filter by type</label>
+							<button class="form-control"  id="menu1">Create
+   							 <span class="caret"></span>
+   							</button>
+						</form>
 
-						</div>
-
+						<form class="form-inline col-lg-2 col-lg-offset-8">
+							<label for="menu1" class="control-label">Filter by type</label>
+							<button class="form-control"  id="menu1">Create
+   							 <span class="caret"></span>
+   							</button>
+						</form>
 					</div>
 			</section>
 

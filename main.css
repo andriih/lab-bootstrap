@@ -1,18 +1,1 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-.wrapper .header .logo {
-  background-color: #F8F8F8 ;
-  border: 1px solid black;
-}
-.wrapper .header .menu {
-  display: block;
-  background-color: #F8F8F8 ;
-  border: 1px solid black;
-}
-.wrapper .header .menu .menu__item {
-  display: block;
-  border: 1px solid black;
-}
+*{box-sizing:border-box}.wrapper .header .logo{background-color:#F8F8F8;border:1px solid #000}.wrapper .header .menu{display:block;background-color:#F8F8F8;border:1px solid #000}.wrapper .header .menu .menu__item{display:block;border:1px solid #000}
